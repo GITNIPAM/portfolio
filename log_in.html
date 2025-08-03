@@ -1,0 +1,138 @@
+<div class="main">
+    <div class="login-container">
+ 
+        <div class="login-form" id="loginForm">
+            <h1 style= "color:red">Login</h1>
+            <p class="text-center">Welcome Back!</p>
+
+                <div class="form-group">
+                    <label for="username">email</label>
+                    <input type="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">password</label>
+                    <input type="password">
+                </div>
+                <p>Already have an account?<span class="switch-form-link" onclick="showRegistrationForm()"> Login </span></p>
+                <button type="submit" class="btn btn-secondary login-btn form-control" >Submit</button>
+            </form>
+        </div>
+
+</div>
+
+    <div class="registration-form" id="registrationForm">
+        <h2 style= "font-family: Kunstler Script">Registration Form</h2>
+        <p class="text-center">Fill in your personal details. </p>
+        
+                <div class="form-group registration row">
+                    <div class="col-6">
+                        <label for="firstName">First Name </label>
+                        <input type="text" class="form-control" id="firstName" name="first_name">
+                </div>
+                <div class="col-6">
+                        <label for="lastName">Last Name </label>
+                        <input type="text" class="form-control" id="lastName" name="last_name">
+                    </div>
+            </div>
+                <div class="form-group registration row">
+                    <div class="col-5">
+                        <label for="contactNumber">Contact Number </label>
+                        <input type="number" class="form-control" id="contactNumber" name="contact_number" maxlength="11">
+                    </div>
+                    <div class="col-7">
+                        <label for="email">Email </label>
+                        <input type="text" class="form-control" id="email" name="email">
+                    </div>
+            </div>
+                <div class="form-group registration">
+                    <label for="registerUsername">Username </label>
+                    <input type="text" class="form-control" id="registerUsername" name="username">
+            </div>
+                <div class="form-group registration">
+                    <label for="registerPassword">Password </label>
+                    <input type="password" class="form-control" id="registerPassword" name="password">
+                </div>
+                <p>Already have an account? <span class="switch-form-link" onclick="showLoginForm()"> Login </span></p>
+                <button type="submit" class="btn btn-dark login-register form-control" name="register"> Register </button>
+    
+            </form>
+        </div>
+    </div>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Book Antiqua', sans-serif;
+        color: rgb(244, 143, 177);
+        background-color: url(236,64,122);
+        }
+
+        body {
+        display: flex;
+        justify-content: left;
+        margin-left: 30;
+        align-items: center;
+        background-image: url("log_in_bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 70vh;
+        }
+
+        .login-form {
+        font: Kunstler Script;
+        backdrop-filter: blur(10px);
+        color: rgb(#ff81ab);
+        padding: 40px;
+        width: 250px;
+        border: 2.5px solid;
+        border-radius: 10px;
+        background-image: url(" ");
+        }
+
+        .registration-form {
+        backdrop-filter: blur(10px);
+        color: rgb(#ff81ab);
+        padding: 40px;
+        width: 250px;
+        border: 2.5px solid;
+        border-radius: 10px;
+        background-image: url(" ");
+        }
+
+        .switch-form-link {
+        text-decoration: underline;
+        cursor: pointer;
+        color: rgb(216, 27, 96);
+        }
+        </style>
+        <script>
+            const loginForm = document.getElementById('loginForm');
+            const registrationForm = document.getElementById('registrationForm');
+        
+            registrationForm.style.display = "none";
+        
+            function showRegistrationForm() {
+            registrationForm.style.display = "";
+            loginForm.style.display = "none";
+        }
+
+        function showLoginForm() {
+            registrationForm.style.display = "none";
+            loginForm.style.display = "";
+        }
+
+        function sendVerificationCode() {
+            const registrationElements = document.querySelectorAll('.registration');
+            
+            registrationElements.forEach(element => {
+                element.style.display = 'none';
+            });
+            
+            const verification = document.querySelector('.verification');
+            if (verification) {
+                verification.style.display = 'none';
+        }
+    }
+
+</script>

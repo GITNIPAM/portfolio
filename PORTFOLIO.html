@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pamela Catacutan - Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-image: url("bg.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: page;
+      background-color: #929292;
+    }
+
+    .resume {
+      max-width: 700px;
+      margin: 1.5rem auto;
+      background-color: #454545;
+      padding: 2.5rem;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      color: #ffffff ;
+      background-image: url("LAST.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: page;
+      background-attachment: scroll;
+    }
+
+    header {
+      text-align: left;
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    header span {
+      color: #ffffff;
+    }
+
+    header p {
+      margin: 0.3rem 0 0;
+      font-size: 1.1rem;
+    }
+
+    section {
+      margin-bottom: 1.8rem;
+    }
+
+    h2 {
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      font-size: 1.6rem;
+      padding-bottom: 0.3rem;
+    }
+
+    .resume p {
+      text-align: justify;
+      font-size: 1.1rem;
+      line-height: 1.6; 
+        }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+
+    ul li {
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skills li {
+      background-color: #ffffff;
+      color: #000000;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+
+    .icons {
+      display: flex;
+      gap: 15px;
+      font-size: 1.1rem;
+      margin-top: 0.8rem;
+    }
+
+    .radar-chart {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 1rem auto;
+    }
+
+    .contact ul li::before {
+      content: "";
+      margin-right: 8px;
+    }
+
+    .contact ul li.location::before {
+      content: "📍";
+    }
+
+    .contact ul li.email::before {
+      content: "✉️";
+    }
+
+    .contact ul li.phone::before {
+      content: "📞";
+    }
+
+    .contact ul li.linkedin::before {
+      content: "🔗";
+    }
+
+    .experience ul li::before,
+    .seminars ul li::before {
+      content: "• ";
+      color: #ffffff;
+      margin-right: 6px;
+    }
+
+    .experience ul,
+    .seminars ul {
+      padding-left: 1rem;
+    }
+    .seminars ul li.no-bullet::before {
+      content: none;
+    }
+
+    .seminars ul li.no-bullet {
+      padding-left: 1.5rem;
+    }
+    .seminars a,
+        .seminars a:visited {
+          text-decoration: underline;
+          color: #ffffff;
+          font-weight: inherit;
+        }
+        .seminars a:hover {
+          text-decoration: underline;
+          color: #ffffff;
+        }
+
+        .projects a,
+        .projects a:visited {
+          text-decoration: underline;
+          color: #ffffff;
+          font-weight: inherit;
+        }
+        .projects a:hover {
+          text-decoration: underline;
+          color: #ffffff;
+        }
+    @media (max-width: 600px) {
+      .resume {
+        padding: 1.2rem;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="resume">
+    <header>
+      <h1><strong>Pamela <span></span></strong> <span><strong> Catacutan</strong> </span></h1>
+      <p>2nd Year Undergraduate Student</p>
+      <p><strong>Philippine Christian University - Dasmariñas</strong></p>
+    </header>
+
+    <section class="profile">
+      <p>
+        A 19-year-old Information Technology student with a strong interest in <strong>cloud computing,
+          cybersecurity,</strong> and <strong>UI/UX design.</strong> I continuously seek opportunities to expand my
+        technical skills, contribute to meaningful projects, and grow as an aspiring <strong>Cloud Architect</strong>
+        and <strong>Cybersecurity Analyst</strong>.
+      </p>
+    </section>
+
+    <section class="contact">
+    <h2><strong>Contact</strong></h2>
+    <ul>
+      <li class="location">Bacoor City | Cavite, Philippines</li>
+      <li class="email">catacutanpamelaa@gmail.com</li>
+      <li class="phone">+63 961 122 6580</li>
+      <li class="linkedin">linkedin - Pamela Catacutan</li>
+    </ul>
+  </section>
+
+    <section class="experience">
+      <h2><strong>Experiences</strong></h2>
+      <ul>
+        <li>
+          Worked as a <strong>Brand Ambassador</strong> at Acabar Marketing International, Inc.
+        </li>
+        <li>
+          Completed immersion as a <strong>Social Media Manager</strong> at Honey Cleans
+        </li>
+        <li>
+          Volunteered as an <strong>Executive Secretary</strong> at Project Tanglaw
+        </li>
+        <li>
+          Joined as a <strong>member</strong> at AWS Cloud Club PCU Cavite
+        </li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2><strong>Skills</strong></h2>
+      <ul>
+        <li>Communication</li>
+        <li>Personal Brand Building</li>
+        <li>Creative Strategy</li>
+        <li>Branding & Identity</li>
+        <li>Engagement Management</li>
+        <li>Organization</li>
+        <li>Critical Thinking</li>
+        <li>Project Management</li>
+      </ul>
+    </section>
+
+    <section class="seminars">
+      <h2><strong>Seminars | Workshops Attended</strong></h2>
+      <ul>
+        <li>
+          <strong>
+            <a href="SEMINAR1.png" > Get AWS Certified: Roadmap to Career Advancement! </a>
+          </strong> 
+          (October 31, 2024)
+        </li>
+        <li>
+          <strong>
+            <a href="SEMINAR2.png" > AWScend Beyond Limits: Define your Domain, Elevate your Resume </a>
+          </strong> 
+          (March 3, 2025)
+        </li>
+        <li><strong>Philippine Tech Career Fest 2025</strong> (March 29, 2025)</li>
+        <li class="no-bullet"><i> Humaain | The Future of Design (Hands-on Workshop) by Kai Briguera</i> </li>
+        <li><strong>Cybersecurity Essentials 101</strong> (June 29, 2025)</li>
+      </ul>
+    </section>
+
+    <section class="projects">
+      <h2><strong>Projects</strong></h2>
+      <div class="icons">
+        <span>
+           <a href="log_in.html" > 📎Login Form </a>
+        </span>
+        <span>
+          <a href="https://www.figma.com/proto/R4J9HZDFKNiZiKZwRmEVk3/HCI-FINALS?node-id=156-2&t=N4dl9QlFALMTsHFZ-1" > 📎Online Ordering Shop </a>
+        </span>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
